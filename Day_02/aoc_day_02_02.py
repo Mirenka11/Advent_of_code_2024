@@ -1,3 +1,26 @@
+def problem_dampener(report:list[int])->list[int]:
+    """Removes one single bad level from report
+
+    Args:
+        report (list[int]): list containing numbers called "levels"
+    Returns:
+        list[int]: "polished" report without the bad datapoint
+    """
+    if is_safe(report):
+        return report
+
+def something_like_derivative(report:list(int))->bool:
+    """ TODO
+    """
+    it_1 = iter(report)
+    it_2 = iter(report)
+    next(it_2)
+    slope = []
+    for level in next(it_2):
+    	slope.append(level - next(it_1))
+	return slope
+	       
+	                     
 def is_safe(report:list[int])->bool:
     """Decide whether report is safe. The report contains numbers called "levels".
      A report only counts as safe if both of the following are true:
@@ -10,19 +33,7 @@ def is_safe(report:list[int])->bool:
 
     Returns:
         bool: True if report is safe (according to the description above)
-    """
-
-def problem_dampener(report:list[int])->list[int]:
-    """Removes one single bad level from report
-
-    Args:
-        report (list[int]): list containing numbers called "levels"
-    Returns:
-        list[int]: "polished" report without the bad datapoint
-    """
-    if is_safe(report):
-        return report
-    
+    """    
 
     it_1 = iter(report) # kdyz uz umim iteratory, tak je taky pouziju
     it_2 = iter(report)
