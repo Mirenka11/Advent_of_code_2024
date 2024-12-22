@@ -82,6 +82,6 @@ with open("Day_02/input_data.txt", "r") as input_data:
 safe_reports = 0
 for line in data:
     if problem_dampener(line): 
-        safe_reports += 1
+        safe_reports += problem_dampener(line)
 
 print(safe_reports)
