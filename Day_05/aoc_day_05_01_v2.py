@@ -1,6 +1,6 @@
 from functools import cmp_to_key
 # splneno s pomoci
-# TODO zkusit to prepsat jinak
+# TODO: zkusit to prepsat jinak
 
 with open('Day_05/input_data.txt') as input_data:
     rules, pages = input_data.read().split('\n\n')
